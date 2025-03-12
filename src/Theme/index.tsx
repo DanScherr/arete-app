@@ -1,6 +1,6 @@
 /** MUI */
 import {createTheme} from '@mui/material';
-import { grey, lime, teal } from '@mui/material/colors';
+import { lime, teal } from '@mui/material/colors';
 
 const color1 = lime;
 const color2 = teal;

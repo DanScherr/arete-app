@@ -4,9 +4,9 @@ import './index.css';
 import Router from './Router';
 import { ThemeProvider } from '@emotion/react';
 import { darkTheme } from './Theme';
-import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
