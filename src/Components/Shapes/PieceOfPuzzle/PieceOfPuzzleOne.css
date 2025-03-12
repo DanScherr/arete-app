@@ -1,0 +1,11 @@
+.puzzleOne {
+    --r: 30px;  /* control the circle radius */
+    --s: 200px; /* control the main size */
+
+    width: calc(var(--s) + var(--r));
+    height: var(--s);
+    mask: 
+        radial-gradient(var(--r) at var(--r) 50%,#000 calc(100% - 1px),#0000), 
+        radial-gradient(var(--r) at bottom,#0000 calc(100% - 1px),#000) 100%/calc(100% - var(--r)) 100% no-repeat;
+    margin: auto;
+}

@@ -1,0 +1,21 @@
+/* HTML: <div class="puzzle"></div> */
+.puzzle {
+    --r: 30px;  /* control the circle radius */
+    --s: 200px; /* control the main size */
+
+    width: calc(var(--s) + var(--r));
+    height: var(--s);
+    mask: 
+        radial-gradient(var(--r) at var(--r) 50%,#000 calc(100% - 1px),#0000), 
+        radial-gradient(var(--r) at bottom,#0000 calc(100% - 1px),#000) 100%/calc(100% - var(--r)) 100% no-repeat;
+    background: #f4ff81;
+    margin: auto;
+}
+
+.decagon {
+    width: 200px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%,100% 50%,calc(90.45% - 16.18px) calc(20.61% - -11.76px),calc(65.45% - 6.18px) calc(2.45% - -19.02px),calc(34.55% - -6.18px) calc(2.45% - -19.02px),calc(9.55% - -16.18px) calc(20.61% - -11.76px),calc(0% - -20px) calc(50% - 0px),calc(9.55% - -16.18px) calc(79.39% - 11.76px),calc(34.55% - -6.18px) calc(97.55% - 19.02px),calc(65.45% - 6.18px) calc(97.55% - 19.02px),calc(90.45% - 16.18px) calc(79.39% - 11.76px),calc(100% - 20px) calc(50% - 0px),calc(90.45% - 16.18px) calc(20.61% - -11.76px));
+    background: #f4ff81;
+    margin: auto;
+}
